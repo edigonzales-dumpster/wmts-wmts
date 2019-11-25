@@ -37,12 +37,12 @@
     <getmap>
       <params>
         <FORMAT>image/png</FORMAT>
-        <LAYERS>ch.so.agi.hintergrundkarte_sw</LAYERS>
+        <LAYERS>ch.so.agi.grundbuchplan_sw</LAYERS>
         <TRANSPARENT>true</TRANSPARENT>
       </params>
     </getmap>
     <http>
-      <url>http://wms:80/wms/grundbuchplan_sw</url>
+      <url>http://wms/wms/grundbuchplan_sw</url>
       <connection_timeout>60</connection_timeout>
     </http>
   </source>
