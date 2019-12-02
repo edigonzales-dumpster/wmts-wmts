@@ -1,15 +1,15 @@
-# wmts-service
-[![Build Status](https://travis-ci.org/edigonzales/wmts-service.svg?branch=master)](https://travis-ci.org/edigonzales/wmts-service)
+# wmts-wmts
+[![Build Status](https://travis-ci.org/edigonzales/wmts-wmts.svg?branch=master)](https://travis-ci.org/edigonzales/wmts-wmts)
 
 ## Building the image
 
 ```
-docker build -t sogis/wmts-service:latest .
+docker build -t sogis/wmts-wmts:latest .
 ```
 
 ## Run
 ```
-docker run -p 8281:8080 -v /tmp:/tiles --rm --name mapcache sogis/wmts-wms
+docker run -p 8281:8080 -v /tmp:/tiles --rm --name mapcache sogis/wmts-wmts
 ```
 
 Log into container:
