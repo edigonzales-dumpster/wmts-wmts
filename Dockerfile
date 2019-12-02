@@ -1,7 +1,7 @@
 FROM debian:buster
 
 RUN apt-get update && \
-    apt-get install --assume-yes --no-install-recommends apache2 libapache2-mod-mapcache mapcache-tools ca-certificates && \
+    apt-get install --assume-yes --no-install-recommends apache2 libapache2-mod-mapcache mapcache-tools ca-certificates curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /var/run/apache2 && \
@@ -24,3 +24,6 @@ EXPOSE 8080
 USER 1001
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND", "-c", "ErrorLog |/bin/cat"]
+
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s CMD curl http://localhost/mapcache/wmts/1.0.0/WMTSCapabilities.xml
+
