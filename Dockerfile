@@ -25,5 +25,5 @@ USER 1001
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND", "-c", "ErrorLog |/bin/cat"]
 
-HEALTHCHECK --interval=30s --timeout=30s --start-period=60s CMD curl http://localhost/mapcache/wmts/1.0.0/WMTSCapabilities.xml
+HEALTHCHECK --interval=30s --timeout=30s --start-period=60s CMD curl http://localhost
 
