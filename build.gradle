@@ -31,6 +31,7 @@ task buildDockerImage(type: DockerBuildImage) {
     labels = ["wmts-wmts.created": new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()), 
             "wmts-wmts.git_commit":  getCheckedOutGitCommitHash(), 
             "wmts-wmts.travis_build": version]    
+    noCache = false
 }
 
 def tags = ["latest", version]
