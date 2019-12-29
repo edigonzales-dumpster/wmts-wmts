@@ -1,5 +1,6 @@
+[![Build Status](https://github.com/edigonzales/wmts-wmts/workflows/CI/CD/badge.svg)](https://github.com/edigonzales/wmts-wmts/workflows/CI/CD/badge.svg)
+
 # wmts-wmts
-[![Build Status](https://travis-ci.org/edigonzales/wmts-wmts.svg?branch=master)](https://travis-ci.org/edigonzales/wmts-wmts)
 
 ## Building the image
 
