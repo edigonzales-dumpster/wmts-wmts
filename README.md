@@ -10,7 +10,7 @@ docker build -t sogis/wmts-wmts:latest .
 
 ## Run
 ```
-docker run -p 8281:8080 -v /tmp:/tiles --rm --name mapcache sogis/wmts-wmts
+docker run -p 8282:8080 -v /tmp:/tiles --rm --name mapcache sogis/wmts-wmts
 ```
 
 Log into container:
@@ -25,5 +25,5 @@ docker exec -it mapcache mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.gr
 
 WMTSCapabilities.xml:
 ```
-http://localhost:8281/mapcache/wmts/1.0.0/WMTSCapabilities.xml
+http://localhost:8282/mapcache/wmts/1.0.0/WMTSCapabilities.xml
 ```
