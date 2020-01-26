@@ -38,7 +38,7 @@
       <params>
         <FORMAT>image/png</FORMAT>
         <LAYERS>ch.so.agi.grundbuchplan_sw</LAYERS>
-        <TRANSPARENT>true</TRANSPARENT>
+        <TRANSPARENT>false</TRANSPARENT>
       </params>
     </getmap>
     <http>
